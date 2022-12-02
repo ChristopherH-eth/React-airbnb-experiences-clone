@@ -1,25 +1,29 @@
-import logo from './logo.svg';
-import './App.css';
+import Header from "./components/Header"
+import UpperBody from "./components/UpperBody"
+import LowerBody from "./components/LowerBody"
+import Footer from "./components/Footer"
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+/**
+ * @file App.js
+ * @author 0xChristopher
+ * @brief This file simply imports the main components of the page and returns them as the main 'App'
+ *      component.
+ */
+
+/**
+ * @brief The App() function builds the webpage with necessary components.
+ * @returns Returns the webpage to be rendered
+ */
+function App()
+{
+    return (
+        <div className="app">
+            <Header />
+            <UpperBody />
+            <LowerBody />
+            <Footer />
+        </div>
+    )
 }
 
-export default App;
+export default App

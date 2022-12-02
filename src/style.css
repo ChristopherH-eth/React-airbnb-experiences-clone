@@ -1,0 +1,202 @@
+/**
+ * @file style.css
+ * @author 0xChristopher
+ * @brief This file contains the css for the Airbnb Experiences clone.
+ */
+
+*
+{
+    box-sizing: border-box;
+}
+
+html, body
+{
+    margin: 0;
+    height: 100vh;
+    font-family: 'Poppins', sans-serif;
+}
+
+/**
+ * Header
+ */
+.header
+{
+    padding: 20px, 35px;
+    min-height: 90px;
+    box-shadow: 0px 3px 7.5px rgba(0, 0, 0, 0.2);
+    display: flex;
+    align-items: center;
+}
+
+.header--logo
+{
+    max-width: 140px;
+    padding: 10px;
+}
+
+/**
+ * Upper Body
+ */
+.upper-body
+{
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+.upper-body--image
+{
+    max-width: 600px;
+    margin-top: 40px;
+    align-self: center;
+}
+
+.upper-body--header
+{
+    font-size: 40px;
+    font-weight: 600;
+    margin-left: 25%;
+    margin-bottom: 0;
+}
+
+.upper-body--text
+{
+    margin-left: 25%;
+    margin-right: 40%;
+    margin-top: 5px;
+    font-size: 22px;
+    font-weight: 300;
+}
+
+/**
+ * Lower Body
+ */
+.lower-body
+{
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.card-carosel
+{
+    width: 80%;
+    display: flex;
+    align-items: center;
+    overflow: scroll;
+    -ms-overflow-style: none;               /* Hide scrollbar IE and Edge */
+    scrollbar-width: none;                  /* Hide scrollbar Firefox */
+}
+
+.card-carosel::-webkit-scrollbar 
+{
+    display: none;                          /* Hide scrollbar Chrome, Safari, Opera and Brave */
+}
+
+/**
+ * Card
+ */
+.card
+{
+    max-width: 300px;
+    padding: 20px;
+    flex: 0 0 auto;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+
+.card--badge
+{
+    position: absolute;
+    top: 24px;
+    left: 24px;
+    background-color: white;
+    padding: 5px 7px;
+    border-radius: 2px;
+    font-weight: bold;
+}
+
+.card--image
+{
+    max-width: 300px;
+    margin-bottom: 0;
+}
+
+.card--reviews, .card--info
+{
+    display: flex;
+    margin-top: 4px;
+    margin-bottom: 0;
+}
+
+.card--reviews
+{
+    align-items: center;
+}
+
+.card--info
+{
+    flex-direction: column;
+}
+
+.card--reviews--star
+{
+    max-width: 20px;
+    margin-right: 5px;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+.card--reviews--rating
+{
+    margin: 0;
+}
+
+.card--reviews--count-location
+{
+    color: gray;
+    padding-left: 5px;
+    margin: 0;
+}
+
+.card--info--title, .card--info--rate1, .card--info--rate2
+{
+    margin: 0;
+}
+
+.card--info--title
+{
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.card--info--rate
+{
+    display: flex;
+    margin-top: 4px;
+}
+
+.card--info--rate1
+{
+    font-weight: 600;
+}
+
+.card--info--rate2
+{
+    color: gray;
+    padding-left: 5px;
+}
+
+/**
+ * Footer
+ */
+.footer
+{
+    padding: 20px 35px;
+    min-height: 90px;
+    box-shadow: 0px -3px 7.5px rgba(0, 0, 0, 0.2);
+    margin-top: 40px;
+    text-align: center;
+}
